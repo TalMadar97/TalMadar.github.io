@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+.background {
+    background-image: url(../Images/project/lead\ the\ way.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 75vh
+}
+
+.container-header {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+}
+
+.container h1 {
+    font: normal normal bold 86px/113px Assistant;
+    color: #D3E10E;
+}
+
+.container p {
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+}
+
+.container-form {
+    direction: rtl;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: auto;
+    margin-top: 20px;
+    margin-right: 420px;
+
+}
+
+.form>label {
+    display: flex;
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+
+
+}
+
+.form>input {
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border-bottom: 4px #D3E10E solid;
+    height: 50px;
+    width: 418px;
+    margin-left: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+}
+
+.container-form>button {
+    width: 166px;
+    height: 50px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    margin-top: 20px;
+    text-align: center;
+    font: normal normal bold 22px/30px Assistant;
+    color: #011560;
+    border: none;
+
+}
+
+@media (max-width:800px) {
+    .background {
+        height: 60%;
+    }
+
+    .container h1 {
+        font: normal normal bold 40px/80px Assistant;
+
+    }
+
+    .container p {
+        font: normal normal normal 16px/20px Assistant;
+
+    }
+
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .form>label {
+        font: normal normal bold 14px/19px Assistant;
+        width: 80vw;
+        margin-top: 10px;
+    }
+
+    .form>input {
+        width: 80vw;
+        border-right: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    .container-form>button {
+        font: normal normal bold 18px/24px Assistant;
+        width: 80vw;
+        margin-left: 20px;
+        border: none;
+    }
+
+}
