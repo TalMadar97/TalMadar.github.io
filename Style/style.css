@@ -377,7 +377,7 @@
  /*-------------------------------- Mobile AREA Begin----------------------------------------------------*/
 
 
- @media (max-width: 800px) {
+ @media (max-width: 1200px) {
      body {
          width: 100%;
          height: auto;
