@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra Game</title>
+    <link rel="stylesheet" href="../Style/AlgebraGame.css">
+    <script src="../Style/AlgebraGame.js" defer></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>Basic Math Game</h1>
+
+        <!-- Difficulty selection -->
+        <div id="difficulty-container">
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+
+        <div id="problem">
+            <span id="num1"></span>
+            <span id="op">+</span>
+            <span id="num2"></span> =
+        </div>
+        <input type="number" id="sum" placeholder="Enter your answer" />
+        <br><br>
+        <button id="check">Check Answer</button>
+        <br><br>
+        <button id="next">Next Problem</button>
+        <br><br>
+        <div id="message"></div>
+    </div>
+
+</body>
+
+</html>

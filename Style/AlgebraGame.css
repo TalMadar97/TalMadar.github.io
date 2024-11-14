@@ -1,0 +1,109 @@
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+ body {
+     font-family: 'Noto Sans', sans-serif;
+     direction: ltr;
+     background-color: #F6F5F5;
+     color: #333;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+ }
+
+ #container {
+     background-color: #fff5e6;
+     width: 50vw;
+     text-align: center;
+     border-radius: 12px;
+     padding: 30px;
+     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease-in-out;
+ }
+
+ h1 {
+     color: #FF6F61;
+     font-size: 2rem;
+     margin-bottom: 20px;
+     font-weight: 600;
+ }
+
+ #difficulty-container {
+     margin-bottom: 20px;
+ }
+
+ #difficulty {
+     font-size: 1rem;
+     padding: 8px;
+     margin-top: 5px;
+     border-radius: 8px;
+     border: 1px solid #FF6F61;
+ }
+
+ #problem {
+     font-size: 2rem;
+     color: #6B4F4F;
+     font-weight: bold;
+ }
+
+ #sum {
+     width: 100px;
+     font-size: 20px;
+     padding: 10px;
+     margin-top: 20px;
+     border-radius: 8px;
+     border: 2px solid #FF6F61;
+     text-align: center;
+     transition: border 0.3s ease;
+ }
+
+ #sum:focus {
+     outline: none;
+     border-color: #FF914D;
+ }
+
+ button {
+     padding: 12px 20px;
+     background-color: #FF6F61;
+     color: white;
+     border: none;
+     border-radius: 8px;
+     font-size: 1rem;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     margin: 10px;
+ }
+
+ button:hover {
+     background-color: #FF914D;
+ }
+
+ #message {
+     font-size: 1.2rem;
+     margin-top: 20px;
+     font-weight: bold;
+ }
+
+ .correct {
+     color: #4CAF50;
+ }
+
+ .error {
+     color: #F44336;
+ }
+
+ .fade-in {
+     animation: fadeIn 0.5s ease-in-out;
+ }
+
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(-20px);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
