@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Card Game</title>
+    <link rel="stylesheet" href="../Style/WarCardGame.css">
+    <script src="../Javascript/WarCardGame.js" defer></script>
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>War Card Game</h1>
+        <div id="gameInfo">
+            <p>Draw cards from each player's deck and compare their values. Highest card wins the round! The First
+                Player to get to 5 Points wins the Game!</p>
+        </div>
+        <div id="message">Click "Deal Cards" to start the game.</div>
+        <div class="game-board">
+            <div class="player-cards">
+                <h3>Player 1</h3>
+                <div id="player1-card" class="card"></div>
+            </div>
+            <div class="vs">
+                <h2>VS</h2>
+                <button id="playBtn">Play Turn</button>
+            </div>
+            <div class="computer-cards">
+                <h3>Player 2</h3>
+                <div id="player2-card" class="card"></div>
+            </div>
+        </div>
+        <button id="dealBtn">Deal Cards</button>
+        <button id="resetBtn" style="display:none;">Reset Game</button>
+    </div>
+</body>
+
+</html>
