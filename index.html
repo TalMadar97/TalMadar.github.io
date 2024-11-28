@@ -284,13 +284,14 @@
 
     <div class="contact" id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="tel" placeholder="Your Phone Number">
-            <textarea rows="4" placeholder="Your Message"></textarea>
+        <form id="contctForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <input type="tel" id="phone" placeholder="Your Phone Number">
+            <textarea rows="4" id="message" placeholder="Your Message"></textarea>
             <button type="submit">Send</button>
         </form>
+        <div id="formMessage" style="display: none;"></div>
     </div>
 
     <footer>
@@ -307,6 +308,54 @@
 
 
     <!-- --------------------------------- Contact AREA End------------------------------------------------ -->
+
+
+
+    <!-- --------------------------------- JavaScript AREA End------------------------------------------------ -->
+    <script>
+        const form = document.getElementById("contactForm");
+        const formMessage = document.getElementById("formMessage");
+
+        // Add event listener for form submission
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Get form values
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+
+            // Validate form fields
+            if (!name || !email || !phone || !message) {
+                formMessage.style.display = "block";
+                formMessage.style.color = "red";
+                formMessage.textContent = "Please fill out all fields!";
+                return;
+            }
+
+            // Simple email format validation
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                formMessage.style.display = "block";
+                formMessage.style.color = "red";
+                formMessage.textContent = "Please enter a valid email address.";
+                return;
+            }
+
+            // Clear any previous error messages
+            formMessage.style.display = "none";
+        });
+
+    </script>
+
+
+
+
+
+
+
+    <!-- --------------------------------- JavaScript AREA End------------------------------------------------ -->
 
 
 </body>
