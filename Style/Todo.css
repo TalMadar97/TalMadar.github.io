@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+#todo-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#todo-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#add-task-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#add-task-button:hover {
+  background-color: #0056b3;
+}
+
+#todo-list {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-header span {
+  flex-grow: 1;
+  cursor: pointer;
+  transition: text-decoration 0.3s;
+}
+
+.todo-header span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-header .delete-button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #ff4d4f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s;
+}
+
+.todo-header .delete-button:hover {
+  background-color: #cc0000;
+}
+
+.subtask-list {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.subtask-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtask-item span {
+  cursor: pointer;
+  transition: text-decoration 0.3s;
+}
+
+.subtask-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.subtask-item .delete-button {
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #ff4d4f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s;
+}
+
+.subtask-item .delete-button:hover {
+  background-color: #cc0000;
+}
+
+/* Style for the "Add Item" button */
+.add-subtask-button {
+  padding: 5px 10px;
+  background-color: #28a745; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.add-subtask-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.todo-item .subtask-list {
+  margin-top: 10px;
+}
+
+.todo-item .subtask-list li {
+  margin-bottom: 5px;
+}
