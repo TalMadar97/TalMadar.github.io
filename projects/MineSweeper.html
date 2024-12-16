@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper Game</title>
+    <link rel="stylesheet" href="../Style/MineSweeper.css" />
+    <script src="../Javascript/MineSweeper.js" defer></script>
+  </head>
+  <body>
+    <h1>Minesweeper</h1>
+
+    <div id="game-info">
+      <p>
+        Welcome to Minesweeper! Try to clear the grid without clicking on a
+        mine.
+      </p>
+      <p><strong>How to Play:</strong></p>
+      <ul>
+        <li>Click on a cell to reveal what's underneath.</li>
+        <li>
+          If it's a number, it shows how many mines are adjacent to that cell.
+        </li>
+        <li>
+          If it's a blank space, it means no adjacent mines, and surrounding
+          cells will be revealed.
+        </li>
+        <li>If you click on a mine, the game is over.</li>
+        <li>
+          You can flag cells where you think there might be a mine by
+          right-clicking.
+        </li>
+      </ul>
+     
+    </div>
+    <div id="game-container"></div>
+  </body>
+</html>
