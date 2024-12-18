@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2c3e50;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  text-align: center;
+  color: #fff;
+}
+
+#game-board {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #fff;
+  margin: 20px auto;
+  position: relative;
+  background-color: #34495e;
+}
+
+.snake {
+  background-color: #27ae60;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.food {
+  background-color: #e74c3c;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.info p {
+  font-size: 18px;
+}
+
+#start-btn, #reset-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#start-btn {
+  background-color: #1abc9c;
+  color: white;
+}
+
+#start-btn:hover {
+  background-color: #16a085;
+}
+
+#reset-btn {
+  background-color: #1396bb;
+  color: white;
+}
+
+#reset-btn:hover {
+  background-color: #19ddda;
+}
+
+.game-info {
+  margin-bottom: 10px;
+}
+
+.game-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.game-info p {
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  background-color: #1abc9c;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.control-btn:hover {
+  background-color: #16a085;
+}
+
+.horizontal-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.vertical-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  #game-board {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .control-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .horizontal-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .vertical-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .game-info {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+}

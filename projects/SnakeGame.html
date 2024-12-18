@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="../Style/SnakeGame.css">
+  <script src="../Javascript/SnakeGame.js" defer></script>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Snake Game</h1>
+    <div class="game-info">
+      <h3>How to Play:</h3>
+      <p>Use the arrow keys or the on-screen arrow buttons to move the snake. The goal is to eat the food and grow the snake without colliding with the walls or itself.</p>
+    </div>
+    <div id="game-board"></div>
+    <div class="info">
+      <p>Score: <span id="score">0</span></p>
+      <button id="start-btn">Start Game</button>
+      <button id="reset-btn">Restart Game</button>
+    </div>
+    <div class="controls">
+      <div class="vertical-controls">
+        <button id="up" class="control-btn">↑</button>
+        <div class="horizontal-controls">
+          <button id="left" class="control-btn">←</button>
+          <button id="right" class="control-btn">→</button>
+        </div>
+        <button id="down" class="control-btn">↓</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
