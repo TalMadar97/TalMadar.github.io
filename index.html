@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tal Madar Project</title>
     <link rel="stylesheet" href="Style/style.css" />
+    <script src="Javascript/javascript.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -313,7 +314,7 @@
 
     <div class="contact" id="contact">
       <h2>Contact Me</h2>
-      <form id="contctForm">
+      <form id="contactForm">
         <input type="text" id="name" placeholder="Your Name" />
         <input type="email" id="email" placeholder="Your Email" />
         <input type="tel" id="phone" placeholder="Your Phone Number" />
@@ -337,43 +338,5 @@
 
     <!-- --------------------------------- Contact AREA End------------------------------------------------ -->
 
-    <!-- --------------------------------- JavaScript AREA End------------------------------------------------ -->
-    <script>
-      const form = document.getElementById("contactForm");
-      const formMessage = document.getElementById("formMessage");
-
-      // Add event listener for form submission
-      form.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form from submitting
-
-        // Get form values
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const message = document.getElementById("message").value;
-
-        // Validate form fields
-        if (!name || !email || !phone || !message) {
-          formMessage.style.display = "block";
-          formMessage.style.color = "red";
-          formMessage.textContent = "Please fill out all fields!";
-          return;
-        }
-
-        // Simple email format validation
-        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailPattern.test(email)) {
-          formMessage.style.display = "block";
-          formMessage.style.color = "red";
-          formMessage.textContent = "Please enter a valid email address.";
-          return;
-        }
-
-        // Clear any previous error messages
-        formMessage.style.display = "none";
-      });
-    </script>
-
-    <!-- --------------------------------- JavaScript AREA End------------------------------------------------ -->
   </body>
 </html>
